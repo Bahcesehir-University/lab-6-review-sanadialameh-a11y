@@ -150,7 +150,7 @@ public:
     // Format: "Student(name, ID: id, GPA: gpa)"
     // Example: "Student(Ali, ID: 101, GPA: 3.5)"
     friend ostream& operator<<(ostream& os, const Student& s) {
-        os << "Student(Name: "<< s.name
+        os << "Student( "<< s.name
            << ", ID: "<< s.id
            << ", GPA: "<< s.gpa << ")";
         // YOUR CODE HERE
