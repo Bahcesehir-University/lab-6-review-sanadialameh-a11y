@@ -165,11 +165,11 @@ public:
 // TODO 6: Function Overloading - findBestStudent
 // Version 1: Takes two Student references, returns the one with higher GPA
 Student findBestStudent(const Student& a, const Student& b) {
-    if (a.getGpa() > b.getGpa())
+    if (a < b)
     // YOUR CODE HERE
-    return a;
-  else
     return b;
+  else
+    return a;
 }
 
 // Version 2: Takes an array of Students and its size, returns the one with highest GPA
