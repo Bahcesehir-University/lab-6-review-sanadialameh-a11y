@@ -166,10 +166,9 @@ public:
 // Version 1: Takes two Student references, returns the one with higher GPA
 Student findBestStudent(const Student& a, const Student& b) {
     if (a < b){
-    // YOUR CODE HERE
-    return b;}
-  else{
-    return a;}
+    return b;
+    }
+    return a;
 }
 
 // Version 2: Takes an array of Students and its size, returns the one with highest GPA
